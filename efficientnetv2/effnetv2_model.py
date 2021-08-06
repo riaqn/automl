@@ -31,9 +31,9 @@ from absl import logging
 import numpy as np
 import tensorflow as tf
 
-import effnetv2_configs
-import hparams
-import utils
+from . import effnetv2_configs
+from . import hparams
+from . import utils
 
 
 def conv_kernel_initializer(shape, dtype=None, partition_info=None):
